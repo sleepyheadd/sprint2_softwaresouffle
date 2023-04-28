@@ -20,9 +20,29 @@ namespace Sprint2_SoftwareSouffle
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<String> usernameStorage = new List<String>();
+        List<String> passwordStorage = new List<String>();
         public MainWindow()
         {
             InitializeComponent();
+
+            //initializing profiles
+            //wait staffer 1
+            usernameStorage.Add("waitstaff1"); passwordStorage.Add("password1");
+            usernameStorage.Add("waitstaff2"); passwordStorage.Add("password2");
+            usernameStorage.Add("waitstaff3"); passwordStorage.Add("password3");
+            usernameStorage.Add("waitstaff4"); passwordStorage.Add("password4");
+            usernameStorage.Add("manager"); passwordStorage.Add("password5");
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            String tempUsername = username.Text;
+            String tempPassword = password.Text;
+            bool isValidLogin = usernameStorage.Contains(tempUsername) && passwordStorage[usernameStorage.IndexOf(tempUsername)] == tempPassword; //determines whether the username and password combo exist
+
+            if (isValidLogin) { /* go to next menu */ }
+            else { loginError.Content = "Invalid login!"; }
         }
     }
 }

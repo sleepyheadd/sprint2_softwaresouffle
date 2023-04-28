@@ -9,10 +9,12 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="494" Margin="-48,0,0,0" VerticalAlignment="Top" Width="838" Source="Images/menuscreen.png"/>
         <TextBox x:Name="username" HorizontalAlignment="Left" Margin="10,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206" Height="19"/>
-        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="10,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206" Height="19"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="10,365,0,0" TextWrapping="Wrap" Text ="" VerticalAlignment="Top" Width="206" Height="19"/>
         <Label x:Name="login" Content="Log In:" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label x:Name="usernameLabel" Content="Username" HorizontalAlignment="Left" Margin="10,292,0,0" VerticalAlignment="Top" FontSize="15"/>
         <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="10,336,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" BorderBrush="#FF8F8F8F" Background="White" Click="LoginButton_Click"/>
+        <Label x:Name="loginError" Content="" HorizontalAlignment="Left" Margin="57,389,0,0" VerticalAlignment="Top" Height="26" FontSize="10" Width="159" Foreground="#FFD80000" FontWeight="Bold"/>
 
     </Grid>
 </Window>
