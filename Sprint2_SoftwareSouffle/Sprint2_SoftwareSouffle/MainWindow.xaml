@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sprint2_SoftwareSouffle"
         mc:Ignorable="d"
-        Title="MainWindow" Height="479" Width="790">
+        Title="JCorners" Height="479" Width="790">
     <Grid>
         <Image HorizontalAlignment="Left" Height="494" Margin="-48,0,0,0" VerticalAlignment="Top" Width="838" Source="Images/menuscreen.png"/>
         <TextBox x:Name="username" HorizontalAlignment="Left" Margin="10,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206" Height="19"/>

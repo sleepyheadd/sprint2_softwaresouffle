@@ -41,8 +41,13 @@ namespace Sprint2_SoftwareSouffle
             String tempPassword = password.Text;
             bool isValidLogin = usernameStorage.Contains(tempUsername) && passwordStorage[usernameStorage.IndexOf(tempUsername)] == tempPassword; //determines whether the username and password combo exist
 
-            if (isValidLogin) { /* go to next menu */ }
+            if (isValidLogin) { //if its a valid login, load the table screen
+                Window1 tablePage = new Window1();
+                tablePage.Show();
+                Close();
+            }
             else { loginError.Content = "Invalid login!"; }
         }
+        
     }
 }
