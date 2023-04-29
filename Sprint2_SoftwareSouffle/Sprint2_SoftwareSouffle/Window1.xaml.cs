@@ -19,16 +19,18 @@ namespace Sprint2_SoftwareSouffle
     /// </summary>
     public partial class Window1 : Window
     {
+        Button activeTable;
         public Window1()
         {
             InitializeComponent();
-            AddToOrder.Visibility = Visibility.Hidden;
+            AddToOrder.Visibility = Visibility.Hidden; //starts out by hiding the options menu
             SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
         }
 
         private void OpenMenu(object sender, RoutedEventArgs e) //shows options for the table
         {
+            activeTable = sender as Button;
             AddToOrder.Visibility = Visibility.Visible;
             SetTableStatus.Visibility = Visibility.Visible;
             CloseMenu.Visibility = Visibility.Visible;
@@ -45,6 +47,20 @@ namespace Sprint2_SoftwareSouffle
             AddToOrder.Visibility = Visibility.Hidden;
             SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
+        }
+
+        private void SetTableStatus_Click(object sender, RoutedEventArgs e) //changes the color of the table based on what the table color already is
+        {
+            if (activeTable.Background.ToString() == "#FFB7FFBA") { activeTable.Background = new SolidColorBrush(Color.FromArgb(255,255,255,183)); }
+            else if (activeTable.Background.ToString() == "#FFFFFFB7") { activeTable.Background = new SolidColorBrush(Color.FromArgb(255, 255, 116, 116)); }
+            else { activeTable.Background = new SolidColorBrush(Color.FromArgb(255, 183, 255, 186)); }
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

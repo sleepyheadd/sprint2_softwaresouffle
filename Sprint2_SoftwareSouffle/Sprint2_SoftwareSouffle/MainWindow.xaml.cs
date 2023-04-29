@@ -20,8 +20,8 @@ namespace Sprint2_SoftwareSouffle
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<String> usernameStorage = new List<String>();
-        List<String> passwordStorage = new List<String>();
+        public static List<String> usernameStorage = new List<String>();
+        public static List<String> passwordStorage = new List<String>();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +32,8 @@ namespace Sprint2_SoftwareSouffle
             usernameStorage.Add("waitstaff2"); passwordStorage.Add("password2");
             usernameStorage.Add("waitstaff3"); passwordStorage.Add("password3");
             usernameStorage.Add("waitstaff4"); passwordStorage.Add("password4");
-            usernameStorage.Add("manager"); passwordStorage.Add("password5");
+            usernameStorage.Add("manager1"); passwordStorage.Add("password5");
+            usernameStorage.Add("manager2"); passwordStorage.Add("password6");
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -41,12 +42,17 @@ namespace Sprint2_SoftwareSouffle
             String tempPassword = password.Text;
             bool isValidLogin = usernameStorage.Contains(tempUsername) && passwordStorage[usernameStorage.IndexOf(tempUsername)] == tempPassword; //determines whether the username and password combo exist
 
-            if (isValidLogin) { //if its a valid login, load the table screen
+            if (isValidLogin && tempUsername.Substring(0, tempUsername.Length - 1) == "manager")  //if its a valid login and a manager account, load manager screen 
+            { 
+                managerScreen managerPage = new managerScreen();
+                managerPage.Show();
+                Close();
+            } else if (isValidLogin) //if its a valid login and is a wait staff account, load the table screen
+            {
                 Window1 tablePage = new Window1();
                 tablePage.Show();
                 Close();
-            }
-            else { loginError.Content = "Invalid login!"; }
+            } else { loginError.Content = "Invalid login!"; }
         }
         
     }
