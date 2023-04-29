@@ -16,9 +16,11 @@ namespace Sprint2_SoftwareSouffle
 {
     public partial class managerScreen : Window
     {
+        public static string mostRecentActivity = "";
         public managerScreen()
         {
             InitializeComponent();
+            mostRecent.Content = mostRecentActivity;
         }
 
         private void createProfile_Click(object sender, RoutedEventArgs e)

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sprint2_SoftwareSouffle"
         mc:Ignorable="d"
-        Title="managerScreen" Height="450" Width="824">
+        Title="managerScreen" Height="312" Width="611">
     <Grid>
         <Label x:Name="cplabel" Content="Create Profile" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="25"/>
         <TextBox x:Name="newUsername" HorizontalAlignment="Left" Margin="15,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -17,7 +17,11 @@
         <TextBox x:Name="newModifiedPassword" HorizontalAlignment="Left" Margin="15,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="New Password"/>
         <Button x:Name="modifyButton" Content="Modify" HorizontalAlignment="Left" Margin="15,224,0,0" VerticalAlignment="Top" Click="modifyButton_Click"/>
         <Label x:Name="accountModified" Content="" HorizontalAlignment="Left" Margin="75,224,0,0" VerticalAlignment="Top" Width="139"/>
-        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="748,12,0,0" VerticalAlignment="Top" Click="Logout_Click"/>
+        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="530,222,0,0" VerticalAlignment="Top" Click="Logout_Click"/>
+        <Label x:Name="recentlabel" Content="Employee Activity" HorizontalAlignment="Left" Margin="252,89,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label x:Name="mostRecent" Content="No recent activity" HorizontalAlignment="Left" Margin="252,137,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="restrictedlabel" Content="Authorize Restricted Activity" HorizontalAlignment="Left" Margin="252,0,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label x:Name="restrictedActivity" Content="No restricted activity needs authorizing" HorizontalAlignment="Left" Margin="252,43,0,0" VerticalAlignment="Top" Width="220"/>
 
     </Grid>
 </Window>

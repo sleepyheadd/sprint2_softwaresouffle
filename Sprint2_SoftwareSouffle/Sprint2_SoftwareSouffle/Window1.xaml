@@ -41,5 +41,6 @@
         <Button x:Name="Table9_Copy1" Content="" HorizontalAlignment="Left" Margin="531,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
         <Button x:Name="Table10_Copy1" Content="" HorizontalAlignment="Left" Margin="591,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
         <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="616,217,0,0" VerticalAlignment="Top" Click="Logout_Click"/>
+        <Label x:Name="tablesResponsibleFor" Content="Waitstaff1 is responsible for tables 1-5" HorizontalAlignment="Left" Margin="51,240,0,0" VerticalAlignment="Top" FontSize="16"/>
     </Grid>
 </Window>
