@@ -1,0 +1,11 @@
+Wait Staff Accounts:
+waitstaff1 , password1
+waitstaff2 , password2
+waitstaff3 , password3
+waitstaff4 , password4
+waitstaff5 , password5
+cook1 , password6
+cook2 , password7
+cook3 , password8
+manager1 , password9
+manager2 , password10
