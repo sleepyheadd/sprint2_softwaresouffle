@@ -23,26 +23,27 @@ namespace Sprint2_SoftwareSouffle
         {
             InitializeComponent();
             AddToOrder.Visibility = Visibility.Hidden;
-            RemoveFromOrder.Visibility = Visibility.Hidden;
+            SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
         }
 
         private void OpenMenu(object sender, RoutedEventArgs e) //shows options for the table
         {
             AddToOrder.Visibility = Visibility.Visible;
-            RemoveFromOrder.Visibility = Visibility.Visible;
+            SetTableStatus.Visibility = Visibility.Visible;
             CloseMenu.Visibility = Visibility.Visible;
         }
 
         private void AddToOrder_Click(object sender, RoutedEventArgs e)
         {
-
+            MenuItems menuPage = new MenuItems();
+            menuPage.Show();
         }
 
         private void CloseMenu_Click(object sender, RoutedEventArgs e) //hides option for the table
         {
             AddToOrder.Visibility = Visibility.Hidden;
-            RemoveFromOrder.Visibility = Visibility.Hidden;
+            SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
         }
     }

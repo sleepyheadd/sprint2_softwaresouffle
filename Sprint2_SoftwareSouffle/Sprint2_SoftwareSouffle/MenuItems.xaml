@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sprint2_SoftwareSouffle"
         mc:Ignorable="d"
-        Title="MenuItems" Height="450" Width="800">
-    <Grid>
-        
+        Title="MenuItems" Height="356" Width="595">
+    <Grid HorizontalAlignment="Left" Width="800" Margin="0,0,0,-16">
+        <Button x:Name="Appetizers" Content="Appetizers" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="44" Width="127" FontSize="25" Click="Appetizers_Click"/>
+        <Button x:Name="Sandwiches" Content="Sandwiches" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="25" Click="Sandwiches_Click"/>
+        <Button x:Name="Burgers" Content="Burgers" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="25" Click="Burgers_Click"/>
+        <Button x:Name="Salads" Content="Salads" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="25" Click="Salads_Click"/>
+        <Button x:Name="Drinks" Content="Drinks" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Height="44" Width="138" FontSize="25" Click="Drinks_Click"/>
+        <Button x:Name="foodItem1" Content="Blank" HorizontalAlignment="Left" Margin="245,19,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="49" Width="243" FontSize="25" Click="foodItem1_Click"/>
+        <Button x:Name="foodItem2" Content="Blank" Margin="245,73,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="49" FontSize="25" HorizontalAlignment="Left" Width="243" Click="foodItem2_Click"/>
+        <Button x:Name="foodItem3" Content="Blank" HorizontalAlignment="Left" Margin="245,128,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem3_Click"/>
+        <Button x:Name="foodItem4" Content="Blank" HorizontalAlignment="Left" Margin="245,181,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem4_Click"/>
+        <Button x:Name="foodItem5" Content="Blank" HorizontalAlignment="Left" Margin="245,234,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem5_Click"/>
+
     </Grid>
 </Window>

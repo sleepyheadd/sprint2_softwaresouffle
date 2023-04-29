@@ -8,7 +8,7 @@
         Title="Tables" Height="450" Width="683">
     <Grid>
         <Button x:Name="AddToOrder" Content="Add Item" HorizontalAlignment="Left" Margin="51,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="AddToOrder_Click"/>
-        <Button x:Name="RemoveFromOrder" Content="Remove Item" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="168" FontSize="25"/>
+        <Button x:Name="SetTableStatus" Content="Table Status" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="168" FontSize="25"/>
         <Button x:Name="CloseMenu" Content="Close" HorizontalAlignment="Left" Margin="501,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="CloseMenu_Click"/>
         <Button x:Name="Table1" Content="" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
         <Button x:Name="Table2" Content="" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
