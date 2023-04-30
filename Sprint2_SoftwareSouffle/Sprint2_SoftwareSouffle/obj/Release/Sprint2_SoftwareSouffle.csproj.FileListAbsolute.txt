@@ -20,3 +20,5 @@ C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents
 C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents\Programs\Sprint2\sprint2_softwaresouffle\Sprint2_SoftwareSouffle\Sprint2_SoftwareSouffle\obj\Release\Sprint2_SoftwareSouffle.csproj.CoreCompileInputs.cache
 C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents\Programs\Sprint2\sprint2_softwaresouffle\Sprint2_SoftwareSouffle\Sprint2_SoftwareSouffle\obj\Release\Sprint2_SoftwareSouffle.exe
 C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents\Programs\Sprint2\sprint2_softwaresouffle\Sprint2_SoftwareSouffle\Sprint2_SoftwareSouffle\obj\Release\Sprint2_SoftwareSouffle.pdb
+C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents\Programs\Sprint2\sprint2_softwaresouffle\Sprint2_SoftwareSouffle\Sprint2_SoftwareSouffle\obj\Release\cookMenu.g.cs
+C:\Users\dmbec\OneDrive - Kennesaw State University\Not School Related\Documents\Programs\Sprint2\sprint2_softwaresouffle\Sprint2_SoftwareSouffle\Sprint2_SoftwareSouffle\obj\Release\cookMenu.baml
