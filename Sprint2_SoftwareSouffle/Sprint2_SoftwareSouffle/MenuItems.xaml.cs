@@ -19,7 +19,7 @@ namespace Sprint2_SoftwareSouffle
     /// </summary>
     public partial class MenuItems : Window
     {
-        public List<String> orderedItems = new List<String>();
+        public static List<String> orderedItems = new List<String>();
         public MenuItems()
         {
             InitializeComponent();
@@ -32,52 +32,72 @@ namespace Sprint2_SoftwareSouffle
 
         private void Appetizers_Click(object sender, RoutedEventArgs e) //displays all appetizer options
         {
-            showItems();
-            foodItem1.Content = "Chips & Dip";
-            foodItem2.Content = "Buffalo Blue Chips";
-            foodItem3.Content = "Chicken Nachos";
-            foodItem4.Content = "Fried Veggies";
-            foodItem5.Content = "Catfish Bites";
+            menuItems chipDip = new menuItems("Chips & Dip", 8);
+            menuItems blueChips = new menuItems("Buffalo Blue Chips", 6);
+            menuItems chickenNachos = new menuItems("Chicken Nachos", 8.5f);
+            menuItems friedVeggies = new menuItems("Fried Veggies", 6.5f);
+            menuItems catBites = new menuItems("Catfish Bites", 6.5f);
+
+            updateItems(chipDip, blueChips, chickenNachos, friedVeggies, catBites);
         }
 
         private void Sandwiches_Click(object sender, RoutedEventArgs e) //displays all sandwich options
         {
-            showItems();
-            foodItem1.Content = "Grilled Cheese";
-            foodItem2.Content = "Chicken BLT&A";
-            foodItem3.Content = "Cordon Bleu";
-            foodItem4.Content = "Philly";
-            foodItem5.Content = "Meatball Sub";
+            menuItems grilledCheese = new menuItems("GrilledCheese", 5.5f);
+            menuItems chickenBLT = new menuItems("Chicken BLT&A", 10);
+            menuItems cordonBleu = new menuItems("Cordon Bleu", 11);
+            menuItems philly = new menuItems("Philly", 13.5f);
+            menuItems meatballSub = new menuItems("Meatball Sub", 10f);
+
+            updateItems(grilledCheese, chickenBLT, cordonBleu, philly, meatballSub);
         }
 
         private void Burgers_Click(object sender, RoutedEventArgs e) //displays all burger options
         {
-            showItems();
-            foodItem1.Content = "J's Burger";
-            foodItem2.Content = "Bacon Cheeseburger";
-            foodItem3.Content = "Mushroom Swiss";
-            foodItem4.Content = "Carolina";
-            foodItem5.Content = "Portobello (V)";
+            menuItems jBurger = new menuItems("J's Burger", 10);
+            menuItems baconBurger = new menuItems("Bacon Cheeseburger", 11);
+            menuItems mushSwiss = new menuItems("Mushroom Swiss", 11);
+            menuItems carolina = new menuItems("Carolina", 11);
+            menuItems portobello = new menuItems("Portobello (V)", 8.5f);
+
+            updateItems(jBurger, baconBurger, mushSwiss, carolina, portobello);
         }
 
         private void Salads_Click(object sender, RoutedEventArgs e) //displays all salad options
         {
-            showItems();
-            foodItem1.Content = "House";
-            foodItem2.Content = "Wedge";
-            foodItem3.Content = "Caesar";
-            foodItem4.Content = "Sweet Potato Chicken";
-            foodItem5.Content = "Chicken";
+            menuItems house = new menuItems("House", 10);
+            menuItems wedge = new menuItems("Wedge", 10);
+            menuItems caesar = new menuItems("Caesar", 10);
+            menuItems sPC = new menuItems("Sweet Potato Chicken", 10);
+            menuItems chicken = new menuItems("Chicken", 10);
+
+            updateItems(house, wedge, caesar, sPC, chicken);
         }
 
         private void Drinks_Click(object sender, RoutedEventArgs e) //displays all drink options
         {
+            menuItems coffee = new menuItems("Coffee", 2);
+            menuItems sweetTea = new menuItems("Sweet Tea", 2);
+            menuItems coke = new menuItems("Coke", 2);
+            menuItems lemonade = new menuItems("Lemonade", 2);
+            menuItems milk = new menuItems("Milk", 2);
+
+            updateItems(coffee, sweetTea, coke, lemonade, milk);
+        }
+
+        private void updateItems(menuItems item1, menuItems item2, menuItems item3, menuItems item4, menuItems item5) //updates button names and prices
+        {
             showItems();
-            foodItem1.Content = "Coffee";
-            foodItem2.Content = "Sweet Tea";
-            foodItem3.Content = "Coke";
-            foodItem4.Content = "Lemonade";
-            foodItem5.Content = "Milk";
+            foodItem1.Content = item1.name;
+            pricing1.Content = item1.price;
+            foodItem2.Content = item2.name;
+            pricing2.Content = item2.price;
+            foodItem3.Content = item3.name;
+            pricing3.Content = item3.price;
+            foodItem4.Content = item4.name;
+            pricing4.Content = item4.price;
+            foodItem5.Content = item5.name;
+            pricing5.Content = item5.price;
         }
 
         private void showItems()

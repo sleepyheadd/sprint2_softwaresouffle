@@ -53,7 +53,13 @@ namespace Sprint2_SoftwareSouffle
                 managerScreen managerPage = new managerScreen();
                 managerPage.Show();
                 Close();
-            } else if (isValidLogin) //if its a valid login but not a manager, load the table screen
+            } else if (isValidLogin && tempUsername.Substring(0, tempUsername.Length - 1) == "cook")
+            {
+                loggedInUsername = tempUsername;
+                cookMenu cookPage = new cookMenu();
+                cookPage.Show();
+                Close();
+            } else if (isValidLogin) //if its a valid login but not a manager or cook, load the table screen for wait staff
             {
                 loggedInUsername = tempUsername;
                 Window1 tablePage = new Window1();

@@ -55,15 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="cookMenu.xaml.cs">
+      <DependentUpon>cookMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="managerScreen.xaml.cs">
       <DependentUpon>managerScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="menuItems.cs" />
     <Compile Include="MenuItems.xaml.cs">
       <DependentUpon>MenuItems.xaml</DependentUpon>
     </Compile>
+    <Compile Include="table.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="cookMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

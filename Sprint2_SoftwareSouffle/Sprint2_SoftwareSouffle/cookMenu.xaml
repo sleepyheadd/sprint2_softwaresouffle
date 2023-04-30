@@ -1,0 +1,15 @@
+﻿<Window x:Class="Sprint2_SoftwareSouffle.cookMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sprint2_SoftwareSouffle"
+        mc:Ignorable="d"
+        Title="cookMenu" Height="450" Width="455">
+    <Grid>
+        <Label x:Name="header" Content="Ordered Items" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="35"/>
+        <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="381,28,0,0" VerticalAlignment="Top" Click="Logout_Click"/>
+        <Label x:Name="orderedList" Content="" HorizontalAlignment="Left" Margin="26,72,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

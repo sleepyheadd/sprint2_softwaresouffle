@@ -7,40 +7,41 @@
         mc:Ignorable="d"
         Title="Tables" Height="450" Width="683">
     <Grid>
-        <Button x:Name="AddToOrder" Content="Add Item" HorizontalAlignment="Left" Margin="51,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="AddToOrder_Click"/>
-        <Button x:Name="SetTableStatus" Content="Table Status" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="168" FontSize="25" Click="SetTableStatus_Click"/>
-        <Button x:Name="CloseMenu" Content="Close" HorizontalAlignment="Left" Margin="501,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="CloseMenu_Click"/>
-        <Button x:Name="Table1" Content="" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table2" Content="" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table3" Content="" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table4" Content="" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table5" Content="" HorizontalAlignment="Left" Margin="291,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table6" Content="" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
-        <Button x:Name="Table7" Content="" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table8" Content="" HorizontalAlignment="Left" Margin="471,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table9" Content="" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table10" Content="" HorizontalAlignment="Left" Margin="591,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
-        <Button x:Name="Table1_Copy" Content="" HorizontalAlignment="Left" Margin="51,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table2_Copy" Content="" HorizontalAlignment="Left" Margin="111,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
-        <Button x:Name="Table3_Copy" Content="" HorizontalAlignment="Left" Margin="171,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table4_Copy" Content="" HorizontalAlignment="Left" Margin="231,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table5_Copy" Content="" HorizontalAlignment="Left" Margin="291,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
-        <Button x:Name="Table6_Copy" Content="" HorizontalAlignment="Left" Margin="351,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table7_Copy" Content="" HorizontalAlignment="Left" Margin="411,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
-        <Button x:Name="Table8_Copy" Content="" HorizontalAlignment="Left" Margin="471,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table9_Copy" Content="" HorizontalAlignment="Left" Margin="531,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
-        <Button x:Name="Table10_Copy" Content="" HorizontalAlignment="Left" Margin="591,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table1_Copy1" Content="" HorizontalAlignment="Left" Margin="51,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table2_Copy1" Content="" HorizontalAlignment="Left" Margin="111,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table3_Copy1" Content="" HorizontalAlignment="Left" Margin="171,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table4_Copy1" Content="" HorizontalAlignment="Left" Margin="231,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table5_Copy1" Content="" HorizontalAlignment="Left" Margin="291,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
-        <Button x:Name="Table6_Copy1" Content="" HorizontalAlignment="Left" Margin="351,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table7_Copy1" Content="" HorizontalAlignment="Left" Margin="411,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table8_Copy1" Content="" HorizontalAlignment="Left" Margin="471,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table9_Copy1" Content="" HorizontalAlignment="Left" Margin="531,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
-        <Button x:Name="Table10_Copy1" Content="" HorizontalAlignment="Left" Margin="591,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="AddToOrder" Content="Add Item" HorizontalAlignment="Left" Margin="18,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="AddToOrder_Click"/>
+        <Button x:Name="SetTableStatus" Content="Table Status" HorizontalAlignment="Left" Margin="148,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="168" FontSize="25" Click="SetTableStatus_Click"/>
+        <Button x:Name="CloseMenu" Content="Close" HorizontalAlignment="Left" Margin="531,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="118" FontSize="25" Click="CloseMenu_Click"/>
+        <Button x:Name="Table1" Content="1" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table2" Content="2" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table3" Content="3" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table4" Content="4" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table5" Content="5" HorizontalAlignment="Left" Margin="291,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table6" Content="6" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
+        <Button x:Name="Table7" Content="7" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table8" Content="8" HorizontalAlignment="Left" Margin="471,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table9" Content="9" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table10" Content="10" HorizontalAlignment="Left" Margin="591,10,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
+        <Button x:Name="Table1_Copy" Content="11" HorizontalAlignment="Left" Margin="51,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table2_Copy" Content="12" HorizontalAlignment="Left" Margin="111,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
+        <Button x:Name="Table3_Copy" Content="13" HorizontalAlignment="Left" Margin="171,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table4_Copy" Content="14" HorizontalAlignment="Left" Margin="231,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table5_Copy" Content="15" HorizontalAlignment="Left" Margin="291,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
+        <Button x:Name="Table6_Copy" Content="16" HorizontalAlignment="Left" Margin="351,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table7_Copy" Content="17" HorizontalAlignment="Left" Margin="411,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
+        <Button x:Name="Table8_Copy" Content="18" HorizontalAlignment="Left" Margin="471,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table9_Copy" Content="19" HorizontalAlignment="Left" Margin="531,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFFFFB7" Click="OpenMenu"/>
+        <Button x:Name="Table10_Copy" Content="20" HorizontalAlignment="Left" Margin="591,81,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table1_Copy1" Content="21" HorizontalAlignment="Left" Margin="51,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table2_Copy1" Content="22" HorizontalAlignment="Left" Margin="111,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table3_Copy1" Content="23" HorizontalAlignment="Left" Margin="171,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table4_Copy1" Content="24" HorizontalAlignment="Left" Margin="231,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table5_Copy1" Content="25" HorizontalAlignment="Left" Margin="291,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFFF7474" Click="OpenMenu"/>
+        <Button x:Name="Table6_Copy1" Content="26" HorizontalAlignment="Left" Margin="351,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table7_Copy1" Content="27" HorizontalAlignment="Left" Margin="411,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table8_Copy1" Content="28" HorizontalAlignment="Left" Margin="471,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table9_Copy1" Content="29" HorizontalAlignment="Left" Margin="531,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
+        <Button x:Name="Table10_Copy1" Content="30" HorizontalAlignment="Left" Margin="591,153,0,0" VerticalAlignment="Top" Height="50" Width="50" BorderBrush="Black" Background="#FFB7FFBA" Click="OpenMenu"/>
         <Button x:Name="Logout" Content="Logout" HorizontalAlignment="Left" Margin="616,217,0,0" VerticalAlignment="Top" Click="Logout_Click"/>
         <Label x:Name="tablesResponsibleFor" Content="Waitstaff1 is responsible for tables 1-5" HorizontalAlignment="Left" Margin="51,240,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="MergeTables" Content="Merge Tables" HorizontalAlignment="Left" Margin="342,291,0,0" VerticalAlignment="Top" Background="#FFEFEFEF" Height="76" Width="168" FontSize="25" Click="mergeTables_Click"/>
     </Grid>
 </Window>

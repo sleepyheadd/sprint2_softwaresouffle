@@ -17,6 +17,11 @@
         <Button x:Name="foodItem3" Content="Blank" HorizontalAlignment="Left" Margin="245,128,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem3_Click"/>
         <Button x:Name="foodItem4" Content="Blank" HorizontalAlignment="Left" Margin="245,181,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem4_Click"/>
         <Button x:Name="foodItem5" Content="Blank" HorizontalAlignment="Left" Margin="245,234,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" Height="48" Width="243" FontSize="25" Click="foodItem5_Click"/>
+        <Label x:Name="pricing1" Content="" HorizontalAlignment="Left" Margin="178,31,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Right"/>
+        <Label x:Name="pricing2" Content="" HorizontalAlignment="Left" Margin="178,84,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Right"/>
+        <Label x:Name="pricing3" Content="" HorizontalAlignment="Left" Margin="178,139,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Right"/>
+        <Label x:Name="pricing4" Content="" HorizontalAlignment="Left" Margin="178,192,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Right"/>
+        <Label x:Name="pricing5" Content="" HorizontalAlignment="Left" Margin="178,246,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Right"/>
 
     </Grid>
 </Window>

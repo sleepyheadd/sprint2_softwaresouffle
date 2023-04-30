@@ -20,6 +20,7 @@ namespace Sprint2_SoftwareSouffle
     public partial class Window1 : Window
     {
         Button activeTable;
+        bool isMerging = false;
         public Window1()
         {
             InitializeComponent();
@@ -28,14 +29,27 @@ namespace Sprint2_SoftwareSouffle
             AddToOrder.Visibility = Visibility.Hidden; //starts out by hiding the options menu
             SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
+            MergeTables.Visibility = Visibility.Hidden;
         }
 
         private void OpenMenu(object sender, RoutedEventArgs e) //shows options for the table
         {
-            activeTable = sender as Button;
             AddToOrder.Visibility = Visibility.Visible;
             SetTableStatus.Visibility = Visibility.Visible;
             CloseMenu.Visibility = Visibility.Visible;
+            MergeTables.Visibility = Visibility.Visible;
+
+            if (isMerging) //if merging is enabled, then clicking on a table will merge it with the previously selected table
+            {
+                Button mergedTable = sender as Button;
+                if (activeTable != null)
+                {
+                    mergedTable.Content = activeTable.Content;
+                }
+            } else
+            {
+                activeTable = sender as Button;
+            }
         }
 
         private void AddToOrder_Click(object sender, RoutedEventArgs e)
@@ -51,6 +65,7 @@ namespace Sprint2_SoftwareSouffle
             AddToOrder.Visibility = Visibility.Hidden;
             SetTableStatus.Visibility = Visibility.Hidden;
             CloseMenu.Visibility = Visibility.Hidden;
+            MergeTables.Visibility = Visibility.Hidden;
         }
 
         private void SetTableStatus_Click(object sender, RoutedEventArgs e) //changes the color of the table based on what the table color already is
@@ -62,11 +77,17 @@ namespace Sprint2_SoftwareSouffle
             else { activeTable.Background = new SolidColorBrush(Color.FromArgb(255, 183, 255, 186)); }
         }
 
-        private void Logout_Click(object sender, RoutedEventArgs e)
+        private void Logout_Click(object sender, RoutedEventArgs e) //goes back to the main menu
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
+        }
+
+        private void mergeTables_Click(object sender, RoutedEventArgs e) //merges tables clicked after this button was clicked with the currently selected table
+        {
+            if (isMerging) { isMerging = false; MergeTables.Content = "Merge Tables"; } //toggles between merging and stop merging
+            else { isMerging = true; MergeTables.Content = "Stop Merging"; }
         }
     }
 }
